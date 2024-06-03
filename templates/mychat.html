@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wolfram|Alpha Math Solver</title>
+</head>
+<body>
+    <h1>שאל שאלה במתמטיקה</h1>
+    <form method="POST">
+        <input type="text" name="question" placeholder="הקלד שאלה...">
+        <button type="submit">פתור</button>
+    </form>
+
+    {% if question %}
+        <h2>שאלה: {{ question }}</h2>
+        <h2>תשובה: {{ answer }}</h2>
+    {% endif %}
+</body>
+</html>
